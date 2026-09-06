@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: "ss01" 1;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid #B3272B;
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: #B3272B;
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .jp {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  .container-page {
+    @apply max-w-container mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .label-eyebrow {
+    @apply text-xs font-semibold tracking-wideish uppercase text-red-motor;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

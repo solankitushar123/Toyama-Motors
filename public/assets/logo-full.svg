@@ -1,0 +1,76 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="badgeClipFull">
+      <circle cx="100" cy="100" r="96"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="#0F172A"/>
+  <circle cx="100" cy="100" r="96" fill="#0B1220" stroke="#B3272B" stroke-width="1.5"/>
+
+  <g clip-path="url(#badgeClipFull)">
+    <!-- rising sun rays -->
+    <g fill="#B3272B">
+      <polygon points="100,140 62,8 80,8"/>
+      <polygon points="100,140 92,4 108,4"/>
+      <polygon points="100,140 120,8 138,8"/>
+      <polygon points="100,140 34,26 50,16"/>
+      <polygon points="100,140 150,16 166,26"/>
+    </g>
+    <g fill="#F7F8FA">
+      <polygon points="100,140 77,8 92,6"/>
+      <polygon points="100,140 108,6 123,8"/>
+      <polygon points="100,140 48,18 64,10"/>
+      <polygon points="100,140 136,10 152,18"/>
+    </g>
+
+    <!-- sun disc -->
+    <circle cx="100" cy="108" r="26" fill="#B3272B"/>
+
+    <!-- Mt Fuji silhouette -->
+    <polygon points="34,140 78,78 92,94 100,82 108,94 122,78 166,140" fill="#F7F8FA"/>
+    <polygon points="78,78 92,94 100,82 96,88 84,90" fill="#0B1220" opacity="0.14"/>
+    <polygon points="122,78 108,94 100,82 104,88 116,90" fill="#0B1220" opacity="0.14"/>
+
+    <!-- road -->
+    <rect x="18" y="140" width="164" height="4.5" fill="#F7F8FA"/>
+    <rect x="18" y="146.5" width="164" height="2" fill="#B3272B"/>
+
+    <!-- car silhouette -->
+    <g transform="translate(118,118) scale(0.8)">
+      <path d="M0 18 L4 8 Q7 2 16 2 L34 2 Q42 2 46 8 L50 18 Z" fill="#B3272B"/>
+      <rect x="-2" y="17" width="54" height="7" rx="2" fill="#B3272B"/>
+      <circle cx="10" cy="25" r="5" fill="#0B1220"/>
+      <circle cx="40" cy="25" r="5" fill="#0B1220"/>
+    </g>
+
+    <!-- sakura blossoms -->
+    <g fill="#F7F8FA">
+      <g transform="translate(34,30) scale(0.55)">
+        <circle cx="0" cy="-9" r="7"/><circle cx="8.5" cy="-3" r="7"/><circle cx="5.2" cy="7" r="7"/>
+        <circle cx="-5.2" cy="7" r="7"/><circle cx="-8.5" cy="-3" r="7"/>
+        <circle cx="0" cy="0" r="4.5" fill="#B3272B"/>
+      </g>
+      <g transform="translate(164,32) scale(0.5)">
+        <circle cx="0" cy="-9" r="7"/><circle cx="8.5" cy="-3" r="7"/><circle cx="5.2" cy="7" r="7"/>
+        <circle cx="-5.2" cy="7" r="7"/><circle cx="-8.5" cy="-3" r="7"/>
+        <circle cx="0" cy="0" r="4.5" fill="#B3272B"/>
+      </g>
+      <g transform="translate(62,180) scale(0.4)">
+        <circle cx="0" cy="-9" r="7"/><circle cx="8.5" cy="-3" r="7"/><circle cx="5.2" cy="7" r="7"/>
+        <circle cx="-5.2" cy="7" r="7"/><circle cx="-8.5" cy="-3" r="7"/>
+        <circle cx="0" cy="0" r="4.5" fill="#B3272B"/>
+      </g>
+      <g transform="translate(138,180) scale(0.4)">
+        <circle cx="0" cy="-9" r="7"/><circle cx="8.5" cy="-3" r="7"/><circle cx="5.2" cy="7" r="7"/>
+        <circle cx="-5.2" cy="7" r="7"/><circle cx="-8.5" cy="-3" r="7"/>
+        <circle cx="0" cy="0" r="4.5" fill="#B3272B"/>
+      </g>
+    </g>
+
+    <!-- wordmark banner -->
+    <rect x="18" y="150" width="164" height="19" fill="#0B1220"/>
+    <rect x="18" y="150" width="164" height="1.5" fill="#B3272B"/>
+    <text x="100" y="163.5" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="12.5" letter-spacing="2" fill="#F7F8FA">TOYAMA MOTORS</text>
+  </g>
+</svg>
