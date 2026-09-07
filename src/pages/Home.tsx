@@ -185,13 +185,13 @@ export default function Home() {
                 touch with you.
               </p>
             </div>
-<div className="flex w-full flex-col gap-3.5">
+<div className="flex w-full max-w-md flex-col gap-3">
   <Button
     to="/contact"
     variant="accent"
     size="lg"
     icon
-    className="w-full"
+    className="!flex !h-12 !w-full !items-center !justify-center !gap-2 !rounded-md"
   >
     Contact Toyama Motors
   </Button>
@@ -199,19 +199,19 @@ export default function Home() {
   <Button
     href={`mailto:${company.email}`}
     size="lg"
-    className="w-full !bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink"
+    className="!flex !h-12 !w-full !items-center !justify-center !gap-2 !rounded-md !border !border-paper/40 !bg-transparent !text-paper transition-colors hover:!bg-paper hover:!text-ink"
   >
-    <Mail size={16} />
-    Email Us
+    <Mail size={17} strokeWidth={1.8} />
+    <span>Email Us</span>
   </Button>
 
   <Button
     href={`tel:${company.phoneHref}`}
     size="lg"
-    className="w-full !bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink"
+    className="!flex !h-12 !w-full !items-center !justify-center !gap-2 !rounded-md !border !border-paper/40 !bg-transparent !text-paper transition-colors hover:!bg-paper hover:!text-ink"
   >
-    <Phone size={16} />
-    Call {company.phone}
+    <Phone size={17} strokeWidth={1.8} />
+    <span>Call {company.phone}</span>
   </Button>
 </div>
 
