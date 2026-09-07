@@ -108,7 +108,7 @@ export default function Home() {
         dark
         heading="From Japan, To the World."
         text="Based in Japan, Toyama Motors connects international customers with the country's automotive and machinery market."
-        image="https://www.shutterstock.com/shutterstock/videos/3861088931/thumb/12.jpg?ip=x480"
+        image="https://media.istockphoto.com/id/1478063207/photo/japan-korea-topographic-map-horizontal-3d-render-dark-ocean-color.jpg?s=1024x1024&w=is&k=20&c=kaqkAYg30XB_4B3vQ2ch_vkrRIqu8cI9jY0jZLPUBVU="
         imageAlt="A Japanese highway leading toward the coast, representing export logistics from Japan"
         reverse
       />
