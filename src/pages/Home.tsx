@@ -185,17 +185,36 @@ export default function Home() {
                 touch with you.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3.5">
-              <Button to="/contact" variant="accent" size="lg" icon>
-                Contact Toyama Motors
-              </Button>
-              <Button href={`mailto:${company.email}`} size="lg" className="!bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink">
-                <Mail size={16} /> Email Us
-              </Button>
-              <Button href={`tel:${company.phoneHref}`} size="lg" className="!bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink">
-                <Phone size={16} /> Call {company.phone}
-              </Button>
-            </div>
+<div className="flex w-full flex-col gap-3.5">
+  <Button
+    to="/contact"
+    variant="accent"
+    size="lg"
+    icon
+    className="w-full"
+  >
+    Contact Toyama Motors
+  </Button>
+
+  <Button
+    href={`mailto:${company.email}`}
+    size="lg"
+    className="w-full !bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink"
+  >
+    <Mail size={16} />
+    Email Us
+  </Button>
+
+  <Button
+    href={`tel:${company.phoneHref}`}
+    size="lg"
+    className="w-full !bg-transparent !text-paper !border-paper/40 hover:!bg-paper hover:!text-ink"
+  >
+    <Phone size={16} />
+    Call {company.phone}
+  </Button>
+</div>
+
           </div>
         </div>
       </section>
