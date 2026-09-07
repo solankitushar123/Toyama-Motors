@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[620px] max-h-[880px] w-full overflow-hidden bg-ink">
       <img
-        src="https://i.postimg.cc/7LznhWC4/Chat-GPT-Image-Sep-7-2026-04-44-06-PM.png"
-        alt="Road through a Japanese landscape, representing Toyama Motors' export routes from Japan"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+  src="https://i.postimg.cc/7LznhWC4/Chat-GPT-Image-Sep-7-2026-04-44-06-PM.png"
+  alt="Road through a Japanese landscape, representing Toyama Motors' export routes from Japan"
+  className="absolute inset-0 w-full h-full object-cover object-center"
+/>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/20" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-ink/10 to-transparent" />
 
