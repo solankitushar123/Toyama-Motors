@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[620px] max-h-[880px] w-full overflow-hidden bg-ink">
       <img
-        src="https://i.postimg.cc/vZNVWtRh/Chat-GPT-Image-Sep-7-2026-04-33-40-PM.png"
+        src="https://postimg.cc/4KJ9Fwb2"
         alt="Road through a Japanese landscape, representing Toyama Motors' export routes from Japan"
         className="absolute inset-0 w-full h-full object-cover"
       />
