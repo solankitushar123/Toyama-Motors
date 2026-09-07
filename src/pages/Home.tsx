@@ -31,7 +31,7 @@ export default function Home() {
         eyebrow="About Toyama Motors"
         heading="Connecting Japan's Automotive Excellence with the World."
         text="Toyama Motors is a Japan-based business specializing in new and used vehicles and machinery. Established in 2023, we focus on sourcing quality products and supporting customers with professional export services."
-        image="https://picsum.photos/seed/toyama-about-intro/1000/750"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytuB2LMJYkJfbZ20VEJ-V3x7sA4nCiwyu00SqwqnOYpV-9Vk3_a_MsQ&s=10"
         imageAlt="Vehicles lined up in Japan, representing Toyama Motors' sourcing work"
       >
         <ul className="mt-6 space-y-2.5 text-sm text-ink/80">
@@ -108,7 +108,7 @@ export default function Home() {
         dark
         heading="From Japan, To the World."
         text="Based in Japan, Toyama Motors connects international customers with the country's automotive and machinery market."
-        image="https://picsum.photos/seed/toyama-japan-world/1000/750"
+        image="https://www.shutterstock.com/shutterstock/videos/3861088931/thumb/12.jpg?ip=x480"
         imageAlt="A Japanese highway leading toward the coast, representing export logistics from Japan"
         reverse
       />
