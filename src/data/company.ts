@@ -31,10 +31,7 @@ export const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
-  { label: "Vehicles", to: "/vehicles" },
-  { label: "Machinery", to: "/machinery" },
   { label: "Export Process", to: "/export-process" },
-  { label: "Why Choose Us", to: "/why-us" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
