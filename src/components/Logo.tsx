@@ -9,14 +9,13 @@ type LogoProps = {
 };
 
 /**
- * Toyama Motors brand mark.
+ * Toyama Motors brand logo.
  *
- * The source logo supplied by the client was a low-resolution raster (176x166),
- * so an original vector badge was recreated here preserving the same identity:
- * rising-sun rays, Mt. Fuji silhouette, a car mark and sakura accents inside a
- * circular seal. `variant="lockup"` pairs the badge with a crisp text wordmark
- * for the navbar/footer; `variant="badge"` renders the full circular seal
- * (including its own baked-in wordmark) for standalone use.
+ * Logo image is stored in:
+ * public/assets/logo-full.jpeg
+ *
+ * Since the image is inside the public folder,
+ * it is referenced directly using /assets/logo-full.jpeg.
  */
 export default function Logo({
   variant = "lockup",
@@ -24,40 +23,62 @@ export default function Logo({
   dark = false,
   className = "",
 }: LogoProps) {
+  const logo = "/assets/logo-full.jpeg";
+
+  /**
+   * Standalone badge variant
+   */
   if (variant === "badge") {
     return (
       <img
-        src="./assets/logo-full.svg"
+        src={logo}
         width={size}
         height={size}
         alt="Toyama Motors seal"
-        className={className}
+        className={`object-contain ${className}`}
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+        }}
       />
     );
   }
 
+  /**
+   * Navbar / Footer lockup variant
+   */
   return (
     <Link
       to="/"
       className={`flex items-center gap-2.5 shrink-0 ${className}`}
       aria-label="Toyama Motors home"
     >
+      {/* Brand Logo */}
       <img
-        src="./assets/logo-mark.svg"
+        src={logo}
         width={size}
         height={size}
-        alt=""
-        aria-hidden="true"
-        style={{ width: size, height: size }}
+        alt="Toyama Motors"
+        className="object-contain shrink-0"
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+        }}
       />
+
+      {/* Brand Name */}
       <span
         className={`font-display font-extrabold leading-none tracking-tight ${
           dark ? "text-paper" : "text-ink"
         }`}
-        style={{ fontSize: size * 0.42 }}
+        style={{
+          fontSize: `${size * 0.42}px`,
+        }}
       >
         {company.name}
-        <span className="block text-[0.42em] font-semibold tracking-wideish uppercase text-red-motor mt-0.5">
+
+        {/* Country / Brand Label */}
+        <span className="block text-[0.42em] font-semibold uppercase text-red-motor mt-0.5">
           Japan
         </span>
       </span>
